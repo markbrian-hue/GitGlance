@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-quant-bg: #050505;
+  --color-quant-surface: #0f0f0f;
+  --color-quant-border: #262626;
+  --color-quant-text: #F3F4F6;
+  --color-quant-muted: #8c8c8c;
+  --color-quant-accent: #E05D34;
+  
+  /* Typography */
+  --font-serif: "Instrument Serif", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--color-quant-bg);
+  color: var(--color-quant-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Enforce 0px border radius globally for our brutalist aesthetic */
+* {
+  border-radius: 0px !important;
+}
